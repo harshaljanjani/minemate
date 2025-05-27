@@ -1,6 +1,10 @@
-# MineMate: Because Mining Is More Enjoyable When It’s Not Just Mine
+# MineMate: Democratizing Fun with Gemma, Google AI Studio, and the Google GenAI SDK
 
-MineMate enables you to use natural language to control in-game devices in Minecraft through the Gemma using the Google GenAI SDK with a Python FastAPI backend
+#AISprint
+
+**Google Cloud credits are provided for this project.**
+
+MineMate enables you to use natural language to control in-game devices in Minecraft through the **Gemma 27B** model using the **Google GenAI SDK** with a Python FastAPI backend that
 processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP, and ComputerCraft scripts perform in-game execution. I've actually tested it locally with "Tekkit: The Ressurection," but the devices I've used in the demo apply generally to the ComputerCraft modpack too. You can find the [video demonstration](https://drive.google.com/file/d/16RfNWLFXnLSdoitsg-IkZCFiyUxlABo-/view?usp=sharing) linked here as well.
 
 ![Booting into MineMate - Your Minecraft Assistant Awaits](https://github.com/user-attachments/assets/42b94d3e-1cdc-465a-a300-648143c3f6b7)
@@ -9,6 +13,9 @@ processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP,
 
 ## Requirements
 
+* **Google AI Studio API** Key (set as the `GEMMA_API_KEY` environment variable)
+* **Gemma 27B**
+* **Google GenAI SDK** (install via `pip install google-genai`)
 * Python 3.7
 * FastAPI
 * Uvicorn
@@ -17,11 +24,9 @@ processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP,
 * NestJS
 * Pydantic
 * Minecraft Java Edition with the Tekkit: The Resurrection / ComputerCraft (CC: Tweaked) modification
-* Google AI Studio API Key (set as the `GEMMA_API_KEY` environment variable)
 * Git
 * Lua - Required for in-game ComputerCraft computers (no installation needed outside Minecraft, but knowledge is essential)
 * TypeScript - Automatically installed via NestJS or can be added manually with `npm install --save-dev typescript`
-* Google GenAI SDK (install via `pip install google-genai`)
 
 ## Demo Setup Blueprint (Top-View for Reproducibility)
 
