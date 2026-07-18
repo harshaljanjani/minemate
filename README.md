@@ -1,4 +1,6 @@
-# MineMate: Democratizing Fun with Gemma, Google AI Studio, and the Google GenAI SDK
+![Booting into MineMate - Your Minecraft Assistant Awaits](https://github.com/user-attachments/assets/42b94d3e-1cdc-465a-a300-648143c3f6b7)
+
+### MineMate: Democratizing Fun with Gemma, Google AI Studio, and the Google GenAI SDK
 
 #AISprint
 
@@ -7,11 +9,9 @@
 MineMate enables you to use natural language to control in-game devices in Minecraft through the **Gemma 27B** model using the **Google GenAI SDK** with a Python FastAPI backend that
 processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP, and ComputerCraft scripts perform in-game execution. I've actually tested it locally with "Tekkit: The Ressurection," but the devices I've used in the demo apply generally to the ComputerCraft modpack too. You can find the [video demonstration](https://drive.google.com/file/d/16RfNWLFXnLSdoitsg-IkZCFiyUxlABo-/view?usp=sharing) linked here as well.
 
-![Booting into MineMate - Your Minecraft Assistant Awaits](https://github.com/user-attachments/assets/42b94d3e-1cdc-465a-a300-648143c3f6b7)
-
 **Please bear in mind:** This add-on is not "magic," but is intended as an example to demonstrate to you how you might incorporate your favorite models into Minecraft. During its early and simple form, the library is very dependent on changes made to repository files by developers in order to customize the repository to their specific application, but changes would be small relative to the repository as a whole.
 
-## Requirements
+### Requirements
 
 * **Google AI Studio API** Key (set as the `GEMMA_API_KEY` environment variable)
 * **Gemma 27B**
@@ -28,11 +28,11 @@ processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP,
 * Lua - Required for in-game ComputerCraft computers (no installation needed outside Minecraft, but knowledge is essential)
 * TypeScript - Automatically installed via NestJS or can be added manually with `npm install --save-dev typescript`
 
-## Demo Setup Blueprint (Top-View for Reproducibility)
+### Demo Setup Blueprint (Top-View for Reproducibility)
 
 ![Demo Setup Blueprint (Top-View for Reproducibility)](https://github.com/user-attachments/assets/98915ce6-3bb5-43c4-bb68-c65d96bfa965)
 
-## Overview
+### Overview
 
 1. **Clone the Repository**
 
@@ -104,7 +104,7 @@ processes commands, a NestJS server enables MQTT brokerage over WebSockets/HTTP,
    * Run `generic_peripheral_controller.lua` on the peripheral computers and record their IDs.
    * Execute `home` on the hub machine.
 
-## Configuration
+### Configuration
 
 Tailor MineMate to your configuration:
 
